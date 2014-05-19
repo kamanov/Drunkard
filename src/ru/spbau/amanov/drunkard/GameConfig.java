@@ -17,4 +17,5 @@ public class GameConfig {
     public static final int LANTERN_RADIUS = 3;
     public static final Position BOTTLE_STORE_POS = new Position(4, 0);
     public static final int BEGGAR_PERIOD = 30;
+    public static final int MAX_GAME_STEPS = 500;
 }

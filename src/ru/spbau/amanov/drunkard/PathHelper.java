@@ -27,10 +27,11 @@ public class PathHelper {
     public Position getNextPos(Position from, Position to) {
         field.initFieldObjects();
         Position pos = BFS(from, to);
-        if (pos.equals(from)) {
-            return to;
-        } else if (pos == null) {
+
+        if (pos == null) {
             return null;
+        } else if (pos.equals(from)) {
+            return to;
         }
 
         Position out = pos;
